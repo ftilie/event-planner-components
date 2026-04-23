@@ -1,0 +1,10 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 8,
+  // Open .svg files as markup rather than preview
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  }
+}
