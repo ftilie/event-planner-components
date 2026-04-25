@@ -2,23 +2,21 @@
 
 import EventCard from "@/components/EventCard/EventCard";
 import { useState } from "react";
-import { Event, eventData } from "@/components/EventCard/EventCard.types";
+import { eventData } from "@/components/EventCard/EventCard.types";
+import { Stack } from "@mui/material";
 
 const Homepage = () => {
-    const [showUnfollowModal, setShowUnfollowModal] = useState(false);
-    const [isFollowing, setIsFollowing] = useState(false);
-
-    const handleUnfollow = () => {
-        localStorage.setItem("isFollowing", "false");
-        setIsFollowing(false);
-        setShowUnfollowModal(false);
-    };
-
-    return (
-        <>
+  return (
+    <>
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{ alignItems: "center", justifyContent: "center", height: "95vh" }}
+      >
         <EventCard isEditable={true} event={eventData} />
-        </>
-    );
+      </Stack>
+    </>
+  );
 };
 
 export default Homepage;

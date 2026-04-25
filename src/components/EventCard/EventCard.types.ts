@@ -25,7 +25,7 @@ export type Event = {
 export const eventData: Event = {
   title: "Sample Event",
   // img: "sample.jpg",
-  location: "Sample Location",
+  location: "Romania",
   startDate: "2024-01-01",
   endDate: "2024-01-02",
   days: [

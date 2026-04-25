@@ -52,10 +52,10 @@ class GlobalErrorBoundary extends React.Component<Props, State> {
           </Box>
 
           <Stack sx={{ alignItems: "center", textAlign: "center" }}>
-            <Typography variant="h5" component="h1">
+            <Typography variant="h5" sx={{ color: "var(--color-text)" }}>
               Page isn't available right now
             </Typography>
-            <Typography variant="subtitle1">
+            <Typography variant="subtitle1" sx={{ color: "var(--color-text)" }}>
               This may be because of a technical error that we're working to get
               fixed. Try reloading this page.
             </Typography>
@@ -67,7 +67,7 @@ class GlobalErrorBoundary extends React.Component<Props, State> {
               textTransform: "none",
               borderRadius: "8px",
               backgroundColor: "var(--color-accent)",
-              "&:hover": { backgroundColor: "var(--color-accent-hover)" },
+              "&:hover": { backgroundColor: "var(--color-accent-light)" },
             }}
             onClick={() => window.location.reload()}
           >
